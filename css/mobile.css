@@ -1,0 +1,307 @@
+@media only screen and (max-width: 1024px) {
+    header .container{
+        display: flex;
+        justify-content: center;
+        height: 80px;
+    }
+    header .container ul{
+        display: flex;
+        justify-content: center;
+        margin-left: -30px;
+    }
+    .container form input{
+        border-left: 5px solid #000000; 
+        border-bottom: 5px solid #000000;
+        border-top: 0px; 
+        border-right:0px; 
+        padding: 5px;
+        background-color: transparent;
+        width: 80%;
+    }
+    .container form textarea{
+        background-color: transparent;
+        border-left: 5px solid #000000; 
+        border-bottom: 5px solid #000000;
+        border-top: 0px; 
+        border-right:0px; 
+        padding: 5px;
+        width: 80%;
+        height: 150px;
+    }
+    
+    
+    .projeler :is(.box) {
+        display: inline-block;
+        margin-top: 50px;
+    }
+    
+    .projeler :is(.text) {
+        
+        font-size: 1.25rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        width: 500px;
+        height: auto;
+        margin-top: -200px;
+        background: rgb(255, 255, 255, 0.3);
+        text-align: center;
+        transition: all 700ms;
+    }
+    
+    .projeler :is(.img){
+        display: inline-block;
+    }
+    
+    .projeler :is(h1){
+        margin: -5px 0px
+    }
+    
+    .projeler :is(p) {
+        margin-bottom: 0px;
+    }
+    
+    
+    .projeler :is(img) {
+        width: 500px;
+        height: auto;
+    }
+
+
+    footer .social a {
+        margin: 0px 10px;
+        opacity: 1;
+    }
+}
+@media only screen and (max-width:1000px){
+    .hak :is(.box){
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+@media only screen and (max-width:720px){
+    .skills :is(.boxs){
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:530px){
+    .container form input{
+        border-left: 5px solid #000000; 
+        border-bottom: 5px solid #000000;
+        border-top: 0px; 
+        border-right:0px; 
+        padding: 5px;
+        background-color: transparent;
+        width: 100%;
+    }
+    .container form textarea{
+        background-color: transparent;
+        border-left: 5px solid #000000; 
+        border-bottom: 5px solid #000000;
+        border-top: 0px; 
+        border-right:0px; 
+        padding: 5px;
+        width: 100%;
+        height: 150px;
+    }
+    .hamburger-menu{
+        display: block;
+        position: fixed;
+        margin-top: 10px;
+        z-index: 99;
+    }
+    header .container{
+        position: fixed;
+        height: 80px;
+        width: 100%;
+        background-color: #d7d7d7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+    }
+    header .container nav{
+        position: fixed;
+        left: -100%;
+        transition: all 300ms;
+        z-index: 99;
+    }
+    header :is(ul){
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        height: 100vh;
+        width: 70%; 
+        background-color: #d7d7d7; 
+        margin-left: -40px;
+        z-index: 99;
+        box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.75);
+        z-index: 99;
+    }
+    #check:checked ~ nav{
+        left: 0;
+        z-index: 99;
+    }
+    .textandsocial :is(h5){
+        opacity: 1;
+    }
+    
+    .textandsocial :is(.box){
+        opacity: 1;
+    }
+    .projeler :is(.box) {
+        display: inline-block;
+        margin-top: 50px;
+    }
+    
+    .projeler :is(.text) {
+        position: absolute;
+        font-size: 1.25rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        width: 400px;
+        height: auto;
+        margin-top: -150px;
+        background: rgb(255, 255, 255, 0.3);
+        
+        text-align: center;
+        transition: all 700ms;
+        z-index: 0;
+    }
+    .box:hover :is(.text) {
+        position: absolute;
+        color: white;
+        margin-top: -150px;
+        background: rgb(255, 255, 255, 0.3);
+        backdrop-filter: blur(15px);
+    }
+    .projeler :is(.img){
+        display: inline-block;
+    }
+    
+    .projeler :is(h1){
+        margin: -5px 0px
+    }
+    
+    .projeler :is(p) {
+        margin-bottom: 0px;
+    }
+    
+    
+    .projeler :is(img) {
+        width: 400px;
+        height: auto;
+    }
+        footer .social a {
+            margin: 0px 10px;
+            opacity: 1;
+        }
+    
+}
+@media only screen and (max-width:400px){
+    
+    .projeler :is(.box) {
+        display: inline-block;
+        margin-top: 50px;
+    }
+    
+    .projeler :is(.text) {
+        position: absolute;
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        width: 300px;
+        height: auto;
+        margin-top: -120px;
+        background: rgb(255, 255, 255, 0.3);
+        
+        text-align: center;
+        transition: all 700ms;
+    }
+    
+    .box:hover :is(.text) {
+        position: absolute;
+        color: white;
+        margin-top: -120px;
+        background: rgb(255, 255, 255, 0.3);
+        backdrop-filter: blur(15px);
+    }
+    .projeler :is(.img){
+        display: inline-block;
+    }
+    
+    .projeler :is(h1){
+        margin: -5px 0px
+    }
+    
+    .projeler :is(p) {
+        margin-bottom: 0px;
+    }
+    
+    
+    .projeler :is(img) {
+        width: 300px;
+        height: auto;
+    }
+        footer .social a {
+            margin: 0px 10px;
+            opacity: 1;
+        }
+    
+}
+@media only screen and (max-width:300px){
+    
+    .projeler :is(.box) {
+        display: inline-block;
+        margin-top: 50px;
+    }
+    
+    .projeler :is(.text) {
+        position: absolute;
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        width: 280px;
+        height: auto;
+        margin-top: -110px;
+        background: rgb(255, 255, 255, 0.3);
+       
+        text-align: center;
+        transition: all 700ms;
+    }
+    .box:hover :is(.text) {
+        position: absolute;
+        color: white;
+        margin-top: -110px;
+        background: rgb(255, 255, 255, 0.3);
+        backdrop-filter: blur(15px);
+    }
+    
+    .projeler :is(.img){
+        display: inline-block;
+    }
+    
+    .projeler :is(h1){
+        margin: -5px 0px
+    }
+    
+    .projeler :is(p) {
+        margin-bottom: 0px;
+    }
+    
+    
+    .projeler :is(img) {
+        width: 280px;
+        height: auto;
+    }
+    footer .social a {
+        margin: 0px 10px;
+        opacity: 1;
+    }
+
+}

@@ -1,0 +1,105 @@
+.hamburger-menu {
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    margin-top: 30px;
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+header :is(#check){
+    display: none;
+}
+span, span::before, span::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+}
+
+span {
+    transform: translateY(20px);
+    transition: all 300ms;
+}
+
+span::before {
+    position: absolute;
+    transition: all 300ms;
+    bottom: 15px;
+}
+
+span::after {
+    position: absolute;
+    transition: all 300ms;
+    top: 15px;
+}
+
+#check:checked + .hamburger-menu span {
+    background-color: transparent;
+    transition: all 300ms;
+
+}
+
+#check:checked+.hamburger-menu span::before {
+    transform: rotate(-45deg);
+    transition: all 300ms;
+    bottom: 0;
+}
+
+#check:checked+.hamburger-menu span::after {
+    transform: rotate(45deg);
+    transition: all 300ms;
+    top: 0;
+}
+
+.bosluk{
+    margin: 50px 0px;
+}
+.bosluk2{
+    margin: 25px 0px;
+}
+.bosluk3{
+    margin:15px 0px;
+}
+
+.container form input{
+    border-left: 3px solid #000000; 
+    border-bottom: 3px solid #000000;
+    border-top: 0px; 
+    border-right:0px; 
+    padding: 5px;
+    background-color: transparent;
+    width: 50%;
+}
+.container form textarea{
+    background-color: transparent;
+    border-left: 3px solid #000000; 
+    border-bottom: 3px solid #000000;
+    border-top: 0px; 
+    border-right:0px; 
+    padding: 5px;
+    width: 50%;
+    height: 150px;
+}
+.container form button{
+    border-left: 3px solid #000000; 
+    border-right: 3px solid #000000; 
+    border-top: 0px; 
+    border-bottom:0px;
+    padding:5px 10px;
+    background-color: #d7d7d7;
+    color: #000000;
+    transition: all 300ms;
+}
+.container form button:hover{
+    background-color: #000000;
+    color: #d7d7d7;
+
+}
+.container form input:focus{
+    outline: none;
+}
+.container form textarea:focus{
+    outline: none;
+}
